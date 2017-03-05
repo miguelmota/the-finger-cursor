@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "The Finger Cursor",
+  "description": "This extension turns all your cursors into the middle finger.",
+  "version": "1.0",
+  "background" : {
+    "scripts" : [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "on.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+        "extension.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    "cursor.cur"
+  ],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "activeTab"
+  ]
+}
