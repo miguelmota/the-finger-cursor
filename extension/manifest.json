@@ -15,8 +15,8 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["main.css"],
-      "js": []
+      "css": ["extension.css"],
+      "js": ["extension.js"]
     }
   ],
   "icons": {
@@ -25,7 +25,7 @@
     "128": "icon128.png"
   },
   "web_accessible_resources": [
-    "main.css",
+    "extension.css",
     "cursor.png",
     "cursor@2x.png"
   ],

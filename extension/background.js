@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function (details, tab) {
     chrome.tabs.query({}, function (tabs) {
       for (var i = 0; i < tabs.length; i++) {
         if (tabs && tabs[i].url.indexOf('http') === 0) {
-          chrome.tabs.executeScript(tabs[i].id, { code: 'var link = document.createElement("link");link.href = chrome.extension.getURL("main.css");link.type = "text/css"; link.rel = "stylesheet"; document.getElementsByTagName("head")[0].appendChild(link);document.body.classList.add("fingerCursor")' })
+          chrome.tabs.executeScript(tabs[i].id, { code: 'var link = document.createElement("link");link.href = chrome.extension.getURL("extension.css");link.type = "text/css"; link.rel = "stylesheet"; document.getElementsByTagName("head")[0].appendChild(link);document.body.classList.add("fingerCursor")' })
         }
       }
     })

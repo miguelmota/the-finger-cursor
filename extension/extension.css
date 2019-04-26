@@ -1,4 +1,4 @@
-.fingerCursor{
+:root:root:root:root:root:root:root:root .fingerCursor {
     cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png'), auto !important;
         cursor: -webkit-image-set(
           url('chrome-extension://__MSG_@@extension_id__/cursor.png') 1x,
